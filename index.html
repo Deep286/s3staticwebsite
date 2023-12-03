@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep's Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: gradientAnimation 5s infinite alternate;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 4px solid #fff;
+        }
+
+        h1 {
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .project, .review {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover, .review:hover {
+            transform: scale(1.05);
+        }
+
+        .project h3, .review h3 {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="http://mys3staticwebsitebucket.s3-website-us-east-1.amazonaws.com/profile.png" alt="Profile Image">
+        <h1>Deep's Portfolio</h1>
+    </header>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+            <!-- Add more project details as needed -->
+        </div>
+
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+            <!-- Add more project details as needed -->
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+
+        <div class="review">
+            <h3>Client 1</h3>
+            <p>"Deep did an amazing job on my project. Very professional and talented!"</p>
+        </div>
+
+        <div class="review">
+            <h3>Client 2</h3>
+            <p>"I highly recommend Deep. Excellent communication and quality of work."</p>
+        </div>
+    </section>
+</body>
+</html>
